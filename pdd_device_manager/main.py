@@ -513,32 +513,46 @@ class Task:
 # ============== SSH 连接管理 ==============
 
 class USBManager:
-    """USB 连接管理器 - 使用 usbmuxd/iproxy 进行 USB 连接"""
+    """USB 连接管理器 - 使用 usbmuxd/iproxy 进行 USB 连接 (支持 Windows/macOS/Linux)"""
     
     _last_device_count = 0
     _device_connected_callback = None
     _monitor_timer = None
+    _is_windows = sys.platform == "win32"
     
-    @staticmethod
-    def is_device_connected() -> bool:
+    @classmethod
+    def _get_usb_tool_path(cls, tool_name: str) -> str:
+        """获取 USB 工具路径（支持 Windows 和 macOS/Linux）"""
+        if cls._is_windows:
+            # Windows 上工具通常在 PATH 中，或者使用 .exe 后缀
+            return f"{tool_name}.exe" if not tool_name.endswith('.exe') else tool_name
+        return tool_name
+    
+    @classmethod
+    def is_device_connected(cls) -> bool:
         """检查是否有 iOS 设备通过 USB 连接"""
         try:
+            tool = cls._get_usb_tool_path("idevice_id")
             result = subprocess.run(
-                ["idevice_id", "-l"],
+                [tool, "-l"],
                 capture_output=True,
                 text=True,
                 timeout=5
             )
             return result.returncode == 0 and result.stdout.strip()
+        except FileNotFoundError:
+            print(f"[USBManager] 未找到 {cls._get_usb_tool_path('idevice_id')}，请安装 libimobiledevice")
+            return False
         except:
             return False
     
-    @staticmethod
-    def get_device_count() -> int:
+    @classmethod
+    def get_device_count(cls) -> int:
         """获取连接的 iOS 设备数量"""
         try:
+            tool = cls._get_usb_tool_path("idevice_id")
             result = subprocess.run(
-                ["idevice_id", "-l"],
+                [tool, "-l"],
                 capture_output=True,
                 text=True,
                 timeout=5
@@ -549,13 +563,14 @@ class USBManager:
         except:
             return 0
     
-    @staticmethod
-    def get_device_info() -> List[dict]:
+    @classmethod
+    def get_device_info(cls) -> List[dict]:
         """获取连接的 iOS 设备信息列表"""
         devices = []
         try:
+            tool = cls._get_usb_tool_path("idevice_id")
             result = subprocess.run(
-                ["idevice_id", "-l"],
+                [tool, "-l"],
                 capture_output=True,
                 text=True,
                 timeout=5
@@ -566,8 +581,9 @@ class USBManager:
                         parts = line.strip().split()
                         udid = parts[0]
                         # 获取设备名称
+                        name_tool = cls._get_usb_tool_path("idevicename")
                         name_result = subprocess.run(
-                            ["idevicename", "-u", udid],
+                            [name_tool, "-u", udid],
                             capture_output=True,
                             text=True,
                             timeout=5
@@ -578,16 +594,19 @@ class USBManager:
                             "name": name,
                             "connection": "USB"
                         })
+        except FileNotFoundError as e:
+            print(f"[USBManager] 未找到 USB 工具: {e}")
         except Exception as e:
             print(f"[USBManager] 获取设备信息失败: {e}")
         return devices
     
-    @staticmethod
-    def get_device_udid() -> Optional[str]:
+    @classmethod
+    def get_device_udid(cls) -> Optional[str]:
         """获取连接设备的 UDID"""
         try:
+            tool = cls._get_usb_tool_path("idevice_id")
             result = subprocess.run(
-                ["idevice_id", "-l"],
+                [tool, "-l"],
                 capture_output=True,
                 text=True,
                 timeout=5
@@ -601,12 +620,13 @@ class USBManager:
         except:
             return None
     
-    @staticmethod
-    def start_proxy(local_port: int = 2222, remote_port: int = 22) -> Optional[subprocess.Popen]:
+    @classmethod
+    def start_proxy(cls, local_port: int = 2222, remote_port: int = 22) -> Optional[subprocess.Popen]:
         """启动 iproxy 进行端口转发"""
         try:
+            tool = cls._get_usb_tool_path("iproxy")
             process = subprocess.Popen(
-                ["iproxy", str(local_port), str(remote_port)],
+                [tool, str(local_port), str(remote_port)],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL
             )
