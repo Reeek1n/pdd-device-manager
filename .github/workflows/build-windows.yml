@@ -8,6 +8,8 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+    permissions:
+      contents: write  # 允许写入内容（创建 Release）
     
     steps:
     - name: Checkout code
@@ -45,7 +47,13 @@ jobs:
         Compress-Archive -Path "PDD-Device-Manager" -DestinationPath "PDD-Device-Manager-Windows.zip"
       shell: pwsh
       
-    - name: Upload to Release
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: PDD-Device-Manager-Windows
+        path: pdd_device_manager/dist/PDD-Device-Manager-Windows.zip
+        
+    - name: Create Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'push'
       with:
