@@ -374,23 +374,35 @@ class ExportThread(QThread):
                 
                 print(f"[ExportThread] 下载: {remote_file} -> {local_file}")
                 
-                # 下载文件
-                scp_cmd = [
-                    "sshpass", "-p", self.device.password,
-                    "scp", "-o", "StrictHostKeyChecking=no",
-                    "-P", str(self.device.port),
-                    f"{self.device.user}@{self.device.host}:{remote_file}",
-                    local_file
-                ]
-                
+                # 使用 paramiko SFTP 下载文件
                 try:
-                    result = subprocess.run(scp_cmd, capture_output=True, text=True, timeout=30)
-                    print(f"[ExportThread] scp 结果: returncode={result.returncode}, stderr={result.stderr[:100] if result.stderr else 'empty'}")
-                    if result.returncode == 0:
-                        downloaded += 1
-                        self.progress.emit(f"已下载 {downloaded}/{total_files}: {filename}")
-                    else:
-                        print(f"[ExportThread] 下载失败: {result.stderr}")
+                    import paramiko
+                    
+                    # 建立 SSH 连接
+                    client = paramiko.SSHClient()
+                    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                    client.connect(
+                        hostname=self.device.host,
+                        port=self.device.port,
+                        username=self.device.user,
+                        password=self.device.password,
+                        timeout=30,
+                        allow_agent=False,
+                        look_for_keys=False
+                    )
+                    
+                    # 创建 SFTP 会话并下载文件
+                    sftp = client.open_sftp()
+                    sftp.get(remote_file, local_file)
+                    sftp.close()
+                    client.close()
+                    
+                    downloaded += 1
+                    self.progress.emit(f"已下载 {downloaded}/{total_files}: {filename}")
+                    print(f"[ExportThread] 下载成功: {filename}")
+                    
+                except ImportError:
+                    print(f"[ExportThread] 下载失败: paramiko 未安装")
                 except Exception as e:
                     print(f"[ExportThread] 下载异常: {e}")
             
