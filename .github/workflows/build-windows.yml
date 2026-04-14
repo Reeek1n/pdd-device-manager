@@ -39,15 +39,25 @@ jobs:
       shell: cmd
         
     - name: Create ZIP package
-      if: success()
       run: |
         cd pdd_device_manager\dist
-        Compress-Archive -Path "PDD Device Manager" -DestinationPath "PDD-Device-Manager-Windows.zip"
+        ren "PDD Device Manager" "PDD-Device-Manager"
+        Compress-Archive -Path "PDD-Device-Manager" -DestinationPath "PDD-Device-Manager-Windows.zip"
       shell: pwsh
-        
-    - name: Upload artifact
-      if: success()
-      uses: actions/upload-artifact@v4
+      
+    - name: Upload to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'push'
       with:
-        name: PDD-Device-Manager-Windows
-        path: pdd_device_manager/dist/PDD-Device-Manager-Windows.zip
+        tag_name: v1.0.0
+        name: Release v1.0.0
+        body: |
+          PDD Device Manager Windows 版本
+          
+          使用方法：
+          1. 下载 PDD-Device-Manager-Windows.zip
+          2. 解压到任意文件夹
+          3. 运行 PDD-Device-Manager/PDD Device Manager.exe
+        files: pdd_device_manager/dist/PDD-Device-Manager-Windows.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
