@@ -3123,7 +3123,7 @@ class MainWindow(QMainWindow):
             self._add_wifi_device(device_info)
     
     def _add_usb_device(self, device_info: dict):
-        """添加 USB 设备"""
+        """添加 USB 设备 - 支持多种密码"""
         self.statusbar.showMessage("正在设置 USB 设备...")
         
         # 设置 USB 端口转发
@@ -3136,14 +3136,25 @@ class MainWindow(QMainWindow):
         host = "127.0.0.1"
         port = 2222
         
-        # 测试连接
-        success, conn_message = SSHManager.test_connection(host, "mobile", "001314", port)
-        if not success:
-            QMessageBox.critical(self, "连接失败", f"无法连接到 USB 设备:\n{conn_message}")
+        # 尝试多个密码
+        passwords = ["001314", "alpine"]
+        connected = False
+        used_password = None
+        
+        for password in passwords:
+            self.statusbar.showMessage(f"正在尝试密码: {password}")
+            success, conn_message = SSHManager.test_connection(host, "mobile", password, port)
+            if success:
+                connected = True
+                used_password = password
+                break
+        
+        if not connected:
+            QMessageBox.critical(self, "连接失败", f"无法连接到 USB 设备，请检查:\n1. 设备已越狱\n2. 已安装 OpenSSH\n3. 密码正确 (尝试: {', '.join(passwords)})")
             return
         
         # 发现远程路径
-        remote_path = SSHManager.discover_remote_path(host, "mobile", "001314", port)
+        remote_path = SSHManager.discover_remote_path(host, "mobile", used_password, port)
         if not remote_path:
             QMessageBox.warning(self, "路径发现失败", "未找到 PDDGoodsData 目录")
             return
@@ -3155,7 +3166,7 @@ class MainWindow(QMainWindow):
             name=device_info.get("name", "iOS USB Device"),
             host=host,
             user="mobile",
-            password="001314",
+            password=used_password,
             port=port,
             use_usb=True
         )
@@ -3166,30 +3177,41 @@ class MainWindow(QMainWindow):
         self.save_devices()
         self.refresh_device_list()
         
-        self.statusbar.showMessage(f"USB 设备 {device.name} 添加成功")
-        QMessageBox.information(self, "成功", f"USB 设备 {device.name} 已自动添加！")
+        self.statusbar.showMessage(f"USB 设备 {device.name} 添加成功 (密码: {used_password})")
+        QMessageBox.information(self, "成功", f"USB 设备 {device.name} 已自动添加！\n使用密码: {used_password}")
     
     def _add_wifi_device(self, device_info: dict):
-        """添加 WiFi 设备"""
+        """添加 WiFi 设备 - 支持多种密码"""
         ip = device_info.get("ip")
         port = device_info.get("port", 22)
         
         self.statusbar.showMessage(f"正在连接 {ip}:{port}...")
         
-        # 测试连接
-        success, message = SSHManager.test_connection(ip, "mobile", "001314", port)
-        if not success:
-            QMessageBox.critical(self, "连接失败", f"无法连接到 {ip}:\n{message}\n\n请确保:\n1. 设备已越狱\n2. 已安装 OpenSSH\n3. 密码正确 (默认: 001314)")
+        # 尝试多个密码
+        passwords = ["001314", "alpine"]
+        connected = False
+        used_password = None
+        
+        for password in passwords:
+            self.statusbar.showMessage(f"正在尝试密码: {password}")
+            success, message = SSHManager.test_connection(ip, "mobile", password, port)
+            if success:
+                connected = True
+                used_password = password
+                break
+        
+        if not connected:
+            QMessageBox.critical(self, "连接失败", f"无法连接到 {ip}:\n{message}\n\n请确保:\n1. 设备已越狱\n2. 已安装 OpenSSH\n3. 密码正确 (尝试: {', '.join(passwords)})")
             return
         
         # 获取设备名称
         name_success, name_stdout, _ = SSHManager.execute_command(
-            ip, "mobile", "001314", "hostname", port
+            ip, "mobile", used_password, "hostname", port
         )
         device_name = name_stdout.strip() if name_success else f"iOS Device ({ip})"
         
         # 发现远程路径
-        remote_path = SSHManager.discover_remote_path(ip, "mobile", "001314", port)
+        remote_path = SSHManager.discover_remote_path(ip, "mobile", used_password, port)
         if not remote_path:
             QMessageBox.warning(self, "路径发现失败", "未找到 PDDGoodsData 目录，请确认插件已安装")
             return
@@ -3201,7 +3223,7 @@ class MainWindow(QMainWindow):
             name=device_name,
             host=ip,
             user="mobile",
-            password="001314",
+            password=used_password,
             port=port,
             use_usb=False
         )
