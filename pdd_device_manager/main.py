@@ -761,7 +761,7 @@ class NetworkScanner:
 
 
 class SSHManager:
-    """SSH 连接管理器"""
+    """SSH 连接管理器 - 使用 paramiko 实现跨平台支持"""
     
     _usb_proxy_process: Optional[subprocess.Popen] = None
     _usb_local_port: int = 2222
@@ -795,25 +795,41 @@ class SSHManager:
         return host, port
     
     @staticmethod
+    def _get_ssh_client(host: str, user: str, password: str, port: int = 22, timeout: int = 10):
+        """获取 SSH 客户端连接"""
+        try:
+            import paramiko
+            client = paramiko.SSHClient()
+            client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            client.connect(
+                hostname=host,
+                port=port,
+                username=user,
+                password=password,
+                timeout=timeout,
+                allow_agent=False,
+                look_for_keys=False
+            )
+            return client
+        except ImportError:
+            raise ImportError("paramiko 未安装，请运行: pip install paramiko")
+        except Exception as e:
+            raise e
+    
+    @staticmethod
     def test_connection(host: str, user: str, password: str, port: int = 22, timeout: int = 10, use_usb: bool = False) -> tuple[bool, str]:
         """测试 SSH 连接"""
-        cmd = [
-            "sshpass", "-p", password,
-            "ssh", "-o", "StrictHostKeyChecking=no",
-            "-o", f"ConnectTimeout={timeout}",
-            "-o", "ServerAliveInterval=30",  # 客户端保活
-            "-o", "ServerAliveCountMax=3",
-            "-p", str(port),
-            f"{user}@{host}",
-            "echo 'connected'"
-        ]
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 5)
-            if result.returncode == 0 and "connected" in result.stdout:
+            client = SSHManager._get_ssh_client(host, user, password, port, timeout)
+            stdin, stdout, stderr = client.exec_command("echo 'connected'", timeout=timeout)
+            output = stdout.read().decode().strip()
+            client.close()
+            
+            if "connected" in output:
                 return True, "连接成功"
-            return False, result.stderr or "连接失败"
-        except subprocess.TimeoutExpired:
-            return False, "连接超时"
+            return False, "连接测试失败"
+        except ImportError as e:
+            return False, f"缺少依赖: {str(e)}"
         except Exception as e:
             return False, str(e)
     
@@ -821,19 +837,18 @@ class SSHManager:
     def execute_command(host: str, user: str, password: str, command: str, 
                         port: int = 22, timeout: int = 30) -> tuple[bool, str, str]:
         """执行远程命令"""
-        cmd = [
-            "sshpass", "-p", password,
-            "ssh", "-o", "StrictHostKeyChecking=no",
-            "-o", f"ConnectTimeout={timeout}",
-            "-p", str(port),
-            f"{user}@{host}",
-            command
-        ]
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 10)
-            return result.returncode == 0, result.stdout, result.stderr
-        except subprocess.TimeoutExpired:
-            return False, "", "命令执行超时"
+            client = SSHManager._get_ssh_client(host, user, password, port, timeout)
+            stdin, stdout, stderr = client.exec_command(command, timeout=timeout)
+            
+            stdout_data = stdout.read().decode()
+            stderr_data = stderr.read().decode()
+            exit_code = stdout.channel.recv_exit_status()
+            
+            client.close()
+            return exit_code == 0, stdout_data, stderr_data
+        except ImportError as e:
+            return False, "", f"缺少依赖: {str(e)}"
         except Exception as e:
             return False, "", str(e)
     
@@ -914,22 +929,45 @@ class SSHManager:
     @staticmethod
     def download_directory(host: str, user: str, password: str, remote_dir: str,
                           local_dir: str, port: int = 22) -> tuple[bool, str]:
-        """下载远程目录到本地"""
-        os.makedirs(local_dir, exist_ok=True)
-        cmd = [
-            "sshpass", "-p", password,
-            "scp", "-r", "-o", "StrictHostKeyChecking=no",
-            "-P", str(port),
-            f"{user}@{host}:{remote_dir}/*",
-            local_dir
-        ]
+        """下载远程目录到本地 - 使用 paramiko SFTP"""
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
-            if result.returncode == 0:
-                return True, "下载成功"
-            return False, result.stderr or "下载失败"
-        except subprocess.TimeoutExpired:
-            return False, "下载超时"
+            import paramiko
+            
+            # 建立 SSH 连接
+            client = SSHManager._get_ssh_client(host, user, password, port, timeout=30)
+            
+            # 创建 SFTP 会话
+            sftp = client.open_sftp()
+            
+            # 确保本地目录存在
+            os.makedirs(local_dir, exist_ok=True)
+            
+            # 获取远程文件列表
+            try:
+                remote_files = sftp.listdir(remote_dir)
+            except IOError as e:
+                sftp.close()
+                client.close()
+                return False, f"无法访问远程目录: {str(e)}"
+            
+            # 下载每个文件
+            downloaded = 0
+            for filename in remote_files:
+                remote_path = f"{remote_dir}/{filename}"
+                local_path = os.path.join(local_dir, filename)
+                
+                try:
+                    sftp.get(remote_path, local_path)
+                    downloaded += 1
+                except Exception as e:
+                    print(f"[SSHManager] 下载文件失败 {filename}: {e}")
+            
+            sftp.close()
+            client.close()
+            
+            return True, f"成功下载 {downloaded} 个文件"
+        except ImportError as e:
+            return False, f"缺少依赖: {str(e)}"
         except Exception as e:
             return False, str(e)
     
