@@ -1,0 +1,115 @@
+timestamp=1775462128
+task_id=pdd_20260406_155525
+keyword=杯子
+category=search_filter_trace
+state=running
+saved_count=0
+attempted_count=0
+failed_count=0
+consecutive_failure_count=0
+duplicate_skip_count=0
+unknown_entry_count=0
+no_new_scroll_rounds=0
+consecutive_unknown_or_click_failures=0
+needs_back_navigation=false
+
+[detail]
+step=sales_sort_click
+requested_sort=sales
+applied=false
+baseline_signature=id:641874704749|txt:更多同款商品批发定做保温杯开业纪念寿宴礼品杯子定|txt:316不锈钢保温杯咖啡杯定制logo伴手纪念礼品|id:915117183345
+baseline_visible_count=4
+sales_button=UILabel frame=(94,76,29,17) text="销量"
+sales_direct_tap=false
+direct_tap_target=PDDSRSortFilterMixBtnCell frame=(77,64,61,40) text=""
+sales_button_tapped=true
+collection_activate=true
+cell=PDDSRSortFilterMixBtnCell frame=(77,64,61,40) text=""
+collection=UICollectionView frame=(0,64,375,40) text=""
+delegate=PDDSRSortFilterMixBar
+was_selected=false
+selector=didClickMixBarCell:atIndexPath:
+[top_band_candidates]
+1. PDDSRSortFilterView frame=(0,64,375,80) text="" sendActions=false gestures=true
+2. PDDSRSortFilterMixBar frame=(0,64,375,40) text="" sendActions=false gestures=true
+3. UILabel frame=(19,76,29,17) text="综合" sendActions=false gestures=true
+4. UILabel frame=(94,76,29,17) text="销量" sendActions=false gestures=true
+5. UILabel frame=(158,76,29,17) text="价格" sendActions=false gestures=true
+6. UILabel frame=(249,76,29,17) text="品牌" sendActions=false gestures=true
+7. UILabel frame=(314,76,29,17) text="筛选" sendActions=false gestures=true
+8. UILabel frame=(8,96,359,14) text="" sendActions=false gestures=true
+9. UILabel frame=(8,96,359,14) text="" sendActions=false gestures=true
+10. PDDSearchOutsideFilterView frame=(0,104,375,40) text="" sendActions=false gestures=true
+11. UILabel frame=(27,114,337,25) text="" sendActions=false gestures=true
+12. UILabel frame=(27,114,337,25) text="" sendActions=false gestures=true
+13. UIButton frame=(120,110,53,28) text="春游大促" sendActions=true gestures=true
+14. UIButtonLabel frame=(120,116,54,16) text="春游大促" sendActions=false gestures=true
+15. UIButton frame=(198,110,62,28) text="五星好店" sendActions=true gestures=true
+16. UIButtonLabel frame=(202,116,54,16) text="五星好店" sendActions=false gestures=true
+17. UIButton frame=(280,110,35,28) text="简约" sendActions=true gestures=true
+18. UIButtonLabel frame=(284,116,27,16) text="简约" sendActions=false gestures=true
+19. UIButton frame=(335,110,35,28) text="韩式" sendActions=true gestures=true
+20. UIButtonLabel frame=(339,116,27,16) text="韩式" sendActions=false gestures=true
+21. PDDSearchResultGoodsCellFindSimilarButton frame=(0,144,375,32) text="" sendActions=true gestures=true
+22. PDDSearchResultGoodsCellFindSimilarButton frame=(0,144,375,32) text="" sendActions=true gestures=true
+23. UILabel frame=(25,144,330,32) text="更多同款商品" sendActions=false gestures=true
+24. UILabel frame=(25,144,330,32) text="更多同款商品" sendActions=false gestures=true
+
+[top_band_hit_tests]
+slot_0_mid point=(53,84) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_0_low point=(53,100) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_1_mid point=(142,84) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_1_low point=(142,100) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_2_mid point=(232,84) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_2_low point=(232,100) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_3_mid point=(322,84) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+slot_3_low point=(322,100) chain=UICollectionView frame=(0,64,375,40) text="" -> PDDSRSortFilterMixBar frame=(0,64,375,40) text="" -> PDDSRSortFilterView frame=(0,64,375,80) text="" -> PDDSearchPageView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text="" -> UIView frame=(0,0,375,667) text=""
+
+[toolbar_probe]
+target class=UILabel text="销量"
+target responds setText=true insertText=false becomeFirstResponder=true sendActions=false
+target gestures=0
+target methods=truncateWithAttributeString:maxWidth:maxLine:addedTailCount:tailToken:tokenSpacing:tailIndent:focusAddTail:, pdd_setText:lineSpacing:, pdd_setText:lineSpacing:lineBreakMode:numberOfLines:, pdd_textSize, caculateWidthWithText:, dw_applyWalletFontWithText:, dw_setText:lineSpacing:, setNormalText:reservedText:size:, ab_text, ab_textAttributes, setAb_textAttributes:, setAb_text:, pk_setAttributedTextRespectingTextAndBackgroundColors:, jet_isTextExtraTall, jet_textLength, textAlignment, setTextAlignment:, setAttributedText:, attributedText, setTextColor:, _setTextColor:, _setUsesSimpleTextEffects:, _ancestorWillUpdateFocusInContext:withAnimationCoordinator:, _setFallbackTextColor:forUserInterfaceStyle:, _stringDrawingContext, textColor, text, textRectForBounds:limitedToNumberOfLines:, highlightedTextColor, _textColorFollowsTintColor, textRectForBounds:, _updateTextColorWithFallbackColorIfNeeded, _setText:, _usesSimpleTextEffects, setHighlightedTextColor:, textSize, textSizeForWidth:, drawTextInRect:, _synthesizedAttributedText, _setTextColorFollowsTintColor:, _invalidateTextSize, currentTextColor, _setTextAlignment:, _textAlignmentMirrored, _textRectForBounds:limitedToNumberOfLines:includingShadow:, _textAlignmentFollowsWritingDirection, _drawTextInRect:baselineCalculationOnly:, _drawFullMarqueeTextInRect:, _setMultilineContextWidth:, _setSynthesizedAttributedText:, enablesMarqueeWhenAncestorFocused, setEnablesMarqueeWhenAncestorFocused:, _setTextAlignmentFollowsWritingDirection:, _setTextAlignmentMirrored:, autotrackTextToFit, _multilineContextWidth, setText:, setAutotrackTextToFit:, _isTextFieldCenteredLabel
+cell class=PDDSRSortFilterMixBtnCell text=""
+cell responds setText=false insertText=false becomeFirstResponder=true sendActions=false
+cell gestures=0
+cell methods=<none>
+collection class=UICollectionView text=""
+collection responds setText=false insertText=false becomeFirstResponder=true sendActions=false
+collection gestures=10
+collection gesture[0]=UIScrollViewDelayedTouchesBeganGestureRecognizer targets=<none>
+collection gesture[1]=UIScrollViewPanGestureRecognizer targets=<none>
+collection gesture[2]=UIScrollViewKnobLongPressGestureRecognizer targets=<none>
+collection gesture[3]=UIScrollViewKnobLongPressGestureRecognizer targets=<none>
+collection gesture[4]=UIHoverGestureRecognizer targets=<none>
+collection gesture[5]=_UIDragAutoScrollGestureRecognizer targets=<none>
+collection gestures=... truncated ...
+collection methods=expandItemAtIndexPath:animated:, goodsListSetDataPrividerDelegate:observer:, initGoodsListByDataPrivider:observer:, initGoodsListByDataPrividerDelegate:observer:, pdd_heightForItemAtIndexPath:withWidth:cellClass:setupBlock:, pu_indexPathsForPreparedItems, pu_preparedCellForItemAtIndexPath:, pu_scrollToItemAtIndexPath:atScrollPosition:animated:, __ck_reloadDataKeepingSelection, __ck_indexPathForLastItem, __ck_indexPathForReplyItem, canBecomeFocused, canBeEdited, setEditing:, _didUpdateFocusInContext:withAnimationCoordinator:, _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:isFocused:notify:, _contentOffsetForScrollingToItemAtIndexPath:atScrollPosition:itemFrame:containingScrollView:, _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:collectionViewAnimator:, _setExternalObjectTable:forNibLoadingOfSupplementaryViewOfKind:withReuseIdentifier:, _performBatchUpdates:completion:invalidationContext:tentativelyForReordering:animator:, _selectItemAtIndexPath:animated:scrollPosition:notifyDelegate:deselectPrevious:performCustomSelectionAction:, _endUpdatesWithInvalidationContext:tentativelyForReordering:animator:collectionViewAnimator:, layoutAttributesForItemAtIndexPath:, _performBatchUpdates:completion:invalidationContext:tentativelyForReordering:animator:animationHandler:, _updateDropTargetAppearanceWithTargetIndexPath:intent:indicatorLayoutAttributes:, _endItemAnimationsWithInvalidationContext:tentativelyForReordering:animator:, _focusedItem:isMinX:isMaxX:isMinY:isMaxY:inSection:shouldSearchX:shouldSearchY:, _updateWithItems:tentativelyForReordering:propertyAnimator:collectionViewAnimator:, _performBatchUpdates:completion:invalidationContext:tentativelyForReordering:, contextMenuInteraction:previewForDismissingMenuWithConfiguration:, _endUpdatesWithInvalidationContext:tentativelyForReordering:animator:, _targetIndexPathForMoveFromItemAtIndexPath:toProposedIndexPath:, _createPreparedCellForItemAtIndexPath:withLayoutAttributes:applyAttributes:, _setExternalObjectTable:forNibLoadingOfCellWithReuseIdentifier:, _highlightItemAtIndexPath:animated:scrollPosition:notifyDelegate:, contextMenuInteraction, _focusPromiseRegionsInRect:inCoordinateSpace:inOrthogonalSection:, setIndexPathOfFocusedCellBeforeFocusingOnHorizontalIndexTitleBar:, _selectItemAtIndexPath:animated:scrollPosition:notifyDelegate:, dequeueConfiguredReusableCellWithRegistration:forIndexPath:item:, _endItemAnimationsWithInvalidationContext:tentativelyForReordering:, _contextMenuInteraction:accessoriesForMenuWithConfiguration:, _reorderPrefetchCandidates:forPrefetchVelocity:visibleBounds:, _scrollToItemAtIndexPath:atScrollPosition:animated:, _contentOffsetForScrollingToItemAtIndexPath:atScrollPosition:, indexPathOfFocusedCellBeforeFocusingOnHorizontalIndexTitleBar, _prefetchItemsForPrefetchingContext:maxItemsToPrefetch:, _updateFocusedCellIndexPathIfNecessaryWithLastFocusedRect:, _updateHorizontalIndexTitleBarSelectionForFocusedIndexPath:, numberOfItemsInSection:, _prefetchingContextForVisibleBounds:attributes:notify:, _hasFocusedCellForIndexPath:shouldUsePreUpdateData:, _isReordering, _setShouldPersistSelectionOnReloadDataWhenPossible:, _setPrefetchingContext:forOrthogonalScrollingSection:, setIsMovingFocusFromHorizontalIndexTitleBarToContent:, _adjustFocusContentOffset:toShowFocusItemWithInfo:, _deselectItemAtIndexPath:animated:notifyDelegate:, _getOriginalReorderingIndexPaths:targetIndexPaths:, _isMovingFocusFromHorizontalIndexBarToCellContent:, _updateReorderDestinationViewWithLayoutAttributes:, _prefetchingContextForOrthogonalScrollingSection:, isMovingFocusFromHorizontalIndexTitleBarToContent, _highlightItemAtIndexPath:animated:scrollPosition:, scrollToItemAtIndexPath:atScrollPosition:animated:, preferredFocusedView, allowsMultipleSelection, _unhighlightItemAtIndexPath:animated:notifyDelegate:, _offsetPinnedReorderedItemsWithCurrentContentOffset:, _performBatchUpdates:completion:invalidationContext:, _focusFastScrollingDestinationItemAtContentStart, _cellForItemAtIndexPath:includePrefetchedCells:, _focusFastScrollingDestinationItemForIndexEntry:, _indexPathOfItemNearestToPoint:intersectingRect:, _supportsAutomaticCatalystDragAndDropReordering, _shouldPersistSelectionOnReloadDataWhenPossible, _reusePreviouslyFocusedManagedSubviewIfNeeded:, selectItemAtIndexPath:animated:scrollPosition:, _updateCompactContextMenuStateForVisibleCells:, _focusFastScrollingDestinationItemAtContentEnd
+delegate class=PDDSRSortFilterMixBar text=""
+delegate responds setText=false insertText=false becomeFirstResponder=true sendActions=false
+delegate gestures=0
+delegate methods=didClickMixBarCell:atIndexPath:, createSortFilterCollection, filterItem:showingInnerFilterView:, getPresentSortFilterResultInfo, itemIndex:subItemSelectedAtIndex:, p_checkBrandFilterNewSelected, p_didSelectItemAtIndexPath:currentIsSelected:, p_updateDataSourceDidSelectIndexPath:, resetSelectionToDefaultSortIfPossible, setFilterBtnSelected:, setModel:selectionEnhanceExp:, sheetItem:rotateArrowIcon:, collectionView:numberOfItemsInSection:, collectionView:didSelectItemAtIndexPath:, collectionView:cellForItemAtIndexPath:, collectionView:layout:sizeForItemAtIndexPath:
+
+
+
+[root]
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=6 text=""
+          UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=2 text=""
+            UIView frame=(0.0,0.0,375.0,80.0) visible=true enabled=true interaction=true subviews=0 text=""
+            PDDSearchPageView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=5 text=""
+          UIImageView frame=(0.0,0.0,375.0,20.0) visible=true enabled=false interaction=false subviews=0 text=""
+          PDDSearchDominoLegoView frame=(0.0,64.0,375.0,603.0) visible=false enabled=true interaction=true subviews=1 text=""
+            LELegoView frame=(0.0,64.0,375.0,603.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDSearchPlaceHolderView frame=(0.0,64.0,375.0,603.0) visible=false enabled=true interaction=true subviews=2 text=""
+            UIImageView frame=(163.5,128.0,48.0,48.0) visible=true enabled=false interaction=false subviews=0 text=""
+          PDDBackToTopButton frame=(319.0,667.0,40.0,40.0) visible=false enabled=true interaction=true subviews=2 text="顶部 component.button.null.back_to_top"
+            UIButtonLabel frame=(328.7,686.7,21.0,12.0) visible=false enabled=true interaction=false subviews=0 text="顶部"
+          AMLoadingIndicatorContainer frame=(0.0,0.0,375.0,667.0) visible=true enabled=false interaction=false subviews=1 text=""

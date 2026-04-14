@@ -1,0 +1,9 @@
+{
+  "count": "5",
+  "sort_by": "sales",
+  "price_min": "",
+  "price_max": "10",
+  "review_min": "",
+  "task_mode": "once",
+  "interval_seconds": "300"
+}

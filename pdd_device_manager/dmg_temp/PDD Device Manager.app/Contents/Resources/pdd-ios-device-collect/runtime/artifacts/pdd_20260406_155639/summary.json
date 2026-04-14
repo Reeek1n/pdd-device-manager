@@ -1,0 +1,52 @@
+{
+  "summary_version": 2,
+  "task_id": "pdd_20260406_155639",
+  "keyword": "杯子",
+  "headline": "failed; structured detail not confirmed; saved_count=0",
+  "result": {
+    "state": "failed",
+    "target_count": 1,
+    "saved_count": 0,
+    "goods_item_count": 0,
+    "detail_confident": false,
+    "raw_count": 0
+  },
+  "timing": {
+    "started_at": 1775462201,
+    "finished_at": 1775462201
+  },
+  "artifacts": {
+    "task_root": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155639",
+    "summary": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155639/summary.json",
+    "manifest": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155639/metadata/manifest.json",
+    "goods_items": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155639/goods_items.json",
+    "log_dir": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155639/log",
+    "primary_raw_file": ""
+  },
+  "triage": {
+    "signal_codes": [
+      "TASK_FAILED",
+      "NO_STRUCTURED_DETAIL"
+    ],
+    "recommended_first_files": [
+      "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155639/metadata/manifest.json"
+    ],
+    "next_steps": [
+      "The task failed. Review the task logs before retrying or loosening any matching rules.",
+      "Do not treat saved_count alone as success. Confirm a structured detail payload from raw/*.txt first."
+    ]
+  },
+  "stats": {
+    "attempted_count": 0,
+    "failed_count": 0,
+    "detail_entry_count": 0,
+    "duplicate_skip_count": 0,
+    "unknown_entry_count": 0,
+    "no_new_scroll_rounds": 0
+  },
+  "error": {
+    "task_error": "license_feature_denied",
+    "task_error_code": "LICENSE_FEATURE_DENIED",
+    "task_error_message": "task failed because the device license does not allow collection"
+  }
+}

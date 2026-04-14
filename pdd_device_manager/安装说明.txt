@@ -1,0 +1,19 @@
+PDD Device Manager 安装说明
+==========================
+
+由于 macOS 应用签名限制，目前提供命令行启动方式。
+
+安装步骤：
+1. 解压 PDD-Device-Manager.zip
+2. 打开终端
+3. 进入解压后的目录
+4. 运行：./启动应用.sh
+
+或者直接在终端运行：
+./PDD\ Device\ Manager
+
+首次运行可能需要在 系统偏好设置 -> 安全性与隐私 中允许。
+
+依赖要求：
+- macOS 11.0 或更高版本
+- Apple Silicon (ARM64) 或 Intel Mac

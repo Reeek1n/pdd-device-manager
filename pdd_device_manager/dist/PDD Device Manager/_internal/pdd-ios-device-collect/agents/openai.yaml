@@ -1,0 +1,7 @@
+interface:
+  display_name: "PDD iOS Device Collect"
+  short_description: "控制越狱 iPhone 采集拼多多详情并输出排障结论"
+  default_prompt: "Use $pdd-ios-device-collect to run a minimal Pinduoduo iPhone detail-collection check and explain the result."
+
+policy:
+  allow_implicit_invocation: true

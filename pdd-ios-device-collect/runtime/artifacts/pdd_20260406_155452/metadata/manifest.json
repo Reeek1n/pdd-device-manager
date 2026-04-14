@@ -1,0 +1,51 @@
+{
+  "target_count" : 2,
+  "keyword" : "杯子",
+  "no_new_scroll_rounds" : 0,
+  "state" : "completed",
+  "attempted_count" : 2,
+  "license" : {
+    "bound_device_name" : "unknown",
+    "customer_name" : "codex-realtest",
+    "status" : "active",
+    "issued_at" : "2026-04-06 15:49:36",
+    "ui_message" : "",
+    "updated_at" : 1775462106,
+    "bound_binding_id" : "sha256:8004ff2bf5d657d3bf34164bf313fce7e3f133b4d3b924f32dc27585197cf250",
+    "binding_source" : "system",
+    "edition" : "standard",
+    "bound_product_type" : "iPhone10,2",
+    "installed" : true,
+    "current_binding_id" : "sha256:8004ff2bf5d657d3bf34164bf313fce7e3f133b4d3b924f32dc27585197cf250",
+    "signature_algorithm" : "p256-sha256",
+    "installed_path" : "\/var\/mobile\/Containers\/Data\/Application\/1206A2C0-4B5F-45DD-85DE-5087E908A375\/Documents\/PDDGoodsData\/license\/license.json",
+    "schema_version" : 2,
+    "license_id" : "lic_skill_valid_110",
+    "valid" : true,
+    "bound_os_version" : "14.3",
+    "notes" : "",
+    "expires_at" : "2027-04-06 23:59:59",
+    "status_path" : "\/var\/mobile\/Containers\/Data\/Application\/1206A2C0-4B5F-45DD-85DE-5087E908A375\/Documents\/PDDGoodsData\/license\/status.json",
+    "product_code" : "pdd_ios_agent",
+    "features" : [
+      "collect",
+      "watch",
+      "export",
+      "deploy",
+      "triage"
+    ],
+    "ui_title" : ""
+  },
+  "saved_count" : 2,
+  "unknown_entry_count" : 0,
+  "finished_at" : 1775462106,
+  "files" : [
+    "844646344718.txt",
+    "641874704749.txt"
+  ],
+  "task_id" : "pdd_20260406_155452",
+  "duplicate_skip_count" : 0,
+  "started_at" : 1775462094,
+  "detail_entry_count" : 2,
+  "failed_count" : 0
+}

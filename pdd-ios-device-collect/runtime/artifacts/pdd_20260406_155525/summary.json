@@ -1,0 +1,51 @@
+{
+  "summary_version": 2,
+  "task_id": "pdd_20260406_155525",
+  "keyword": "杯子",
+  "headline": "completed; structured detail confirmed; 1 goods item(s); saved_count=1",
+  "result": {
+    "state": "completed",
+    "target_count": 1,
+    "saved_count": 1,
+    "goods_item_count": 1,
+    "detail_confident": true,
+    "raw_count": 1
+  },
+  "timing": {
+    "started_at": 1775462127,
+    "finished_at": 1775462141
+  },
+  "artifacts": {
+    "task_root": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525",
+    "summary": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/summary.json",
+    "manifest": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/metadata/manifest.json",
+    "goods_items": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/goods_items.json",
+    "log_dir": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/log",
+    "primary_raw_file": "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/raw/914942382006.txt"
+  },
+  "triage": {
+    "signal_codes": [],
+    "recommended_first_files": [
+      "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/raw/914942382006.txt",
+      "/Users/xiaolintongxue/skill/pdd_ios_agent/skills/pdd-ios-device-collect/runtime/artifacts/pdd_20260406_155525/metadata/manifest.json"
+    ],
+    "next_steps": [
+      "Inspect the structured raw payload first, then use summary.json and the local task directory for downstream export."
+    ]
+  },
+  "stats": {
+    "attempted_count": 1,
+    "failed_count": 0,
+    "detail_entry_count": 1,
+    "duplicate_skip_count": 1,
+    "unknown_entry_count": 0,
+    "no_new_scroll_rounds": 0
+  },
+  "filters": {
+    "sort_by": "sales",
+    "price_min": "10",
+    "price_max": "99",
+    "sales_sort_applied": true,
+    "price_filter_applied": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "action" : "collect",
+  "price_max" : "99",
+  "created_at" : 1775462125,
+  "count" : 1,
+  "task_id" : "pdd_20260406_155525",
+  "keyword" : "杯子",
+  "price_min" : "10",
+  "reply_mode" : "attachment_or_link",
+  "sort_by" : "sales"
+}

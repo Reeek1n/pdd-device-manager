@@ -1,0 +1,119 @@
+timestamp=1775462075
+task_id=pdd_20260406_155430
+keyword=杯子
+source=NSJSONSerialization
+url=
+goods_id=unknown_867
+nested_goods_id=
+goods_name=
+mall_price=
+page_name=search_result
+op=epv
+detail_type=
+has_goods=false
+has_sku=false
+has_price_dict=false
+top_level_keys=_x_org,_x_query,action,app_version,enter_time,install_token,internal_version,list_id,local_ip,local_port,model,network,network_operator,op,page_id,page_name,page_sn,pdd_id,platform,query,refer_page_id,refer_page_sn,refer_search_met,rn,search_met,search_type,sort,source,sub_op,time,uin,user_id
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDGoodsDetailContentView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=4 text=""
+            PDDMixNestScrollMutiTabContainerView frame=(0.0,0.0,375.0,613.0) visible=true enabled=true interaction=true subviews=2 text=""
+              PDDGoodsDetailCollectionView frame=(0.0,0.0,375.0,613.0) visible=true enabled=true interaction=true subviews=14 text=""
+                PDDGoodsDetailPriceCell frame=(0.0,375.0,375.0,38.0) visible=true enabled=true interaction=true subviews=1 text="¥ 首件   118 已优惠35元 已拼11.1万+件"
+                  UIView frame=(0.0,375.0,375.0,38.0) visible=true enabled=true interaction=true subviews=20 text=""
+                    AMAnimatedImageView frame=(12.0,395.8,17.0,16.0) visible=true enabled=false interaction=false subviews=0 text=""
+                    UILabel frame=(33.0,394.3,30.0,19.0) visible=true enabled=true interaction=false subviews=0 text="首件"
+                    UILabel frame=(65.0,395.0,10.0,19.0) visible=true enabled=true interaction=false subviews=0 text="¥"
+                    UILabel frame=(77.0,382.7,46.3,33.7) visible=true enabled=true interaction=false subviews=0 text="118"
+                    UILabel frame=(0.0,375.0,0.0,0.0) visible=false enabled=true interaction=false subviews=0 text=""
+                    PDDGoodsDetailPriceTagView frame=(129.3,393.0,82.3,17.0) visible=true enabled=true interaction=true subviews=7 text=""
+                    UILabel frame=(0.0,375.0,0.0,0.0) visible=false enabled=true interaction=false subviews=0 text=""
+                    UIButton frame=(0.0,375.0,129.3,38.0) visible=true enabled=true interaction=true subviews=0 text=""
+                    UILabel frame=(0.0,375.0,0.0,0.0) visible=false enabled=true interaction=false subviews=0 text=""
+                    YYLabel frame=(272.0,396.3,91.0,16.0) visible=true enabled=true interaction=true subviews=0 text="已拼11.1万+件 已拼11.1万+件"
+                    YYLabel frame=(0.0,375.0,0.0,0.0) visible=false enabled=true interaction=true subviews=0 text=""
+                    YYLabel frame=(0.0,375.0,0.0,0.0) visible=false enabled=true interaction=true subviews=0 text=""
+                    UILabel frame=(0.0,375.0,0.0,0.0) visible=false enabled=true interaction=false subviews=0 text=""
+                PDDGoodsDetailPromotionV2Cell frame=(0.0,413.0,375.0,39.0) visible=true enabled=true interaction=true subviews=1 text="首件立减35元"
+                  UIView frame=(0.0,413.0,375.0,39.0) visible=true enabled=true interaction=true subviews=5 text=""
+                    UICollectionView frame=(12.0,413.0,336.0,29.0) visible=true enabled=true interaction=true subviews=3 text=""
+                    UIImageView frame=(352.0,425.0,15.0,15.0) visible=true enabled=false interaction=false subviews=0 text=""
+                PDDGoodsDetailTitleTagTableCell frame=(0.0,452.0,375.0,44.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIView frame=(0.0,452.0,375.0,44.0) visible=true enabled=true interaction=true subviews=4 text=""
+                    YYLabel frame=(12.0,452.0,353.0,44.0) visible=true enabled=true interaction=true subviews=0 text="广告杯定制水杯logo印字玻璃杯双层隔热开业活动赠品批发刻字杯子"
+                PDDGoodsDetailBlankSectionCell frame=(0.0,496.0,375.0,6.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIView frame=(0.0,496.0,375.0,6.0) visible=true enabled=true interaction=true subviews=3 text=""
+                PDDGoodsDetailBlankSectionCell frame=(0.0,496.0,375.0,6.0) visible=false enabled=true interaction=true subviews=1 text=""
+                  UIView frame=(0.0,496.0,375.0,6.0) visible=true enabled=true interaction=true subviews=3 text=""
+                PDDGoodsDetailTemplateCell frame=(0.0,502.0,375.0,25.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIView frame=(0.0,502.0,375.0,25.0) visible=true enabled=true interaction=true subviews=4 text=""
+                    PDDGoodsDetailTemplateView frame=(0.0,502.0,375.0,25.0) visible=true enabled=true interaction=true subviews=1 text=""
+                PDDGoodsDetailSectionHeaderCell frame=(0.0,527.0,375.0,30.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIView frame=(0.0,527.0,375.0,30.0) visible=true enabled=true interaction=true subviews=9 text=""
+                    UILabel frame=(0.0,527.0,0.0,0.0) visible=false enabled=true interaction=false subviews=0 text=""
+                    UILabel frame=(355.0,545.0,0.0,0.0) visible=false enabled=true interaction=false subviews=0 text=""
+                    UIImageView frame=(355.0,538.5,13.0,13.0) visible=true enabled=false interaction=false subviews=0 text=""
+                    YYLabel frame=(12.0,536.0,217.0,18.0) visible=true enabled=true interaction=true subviews=0 text="3000+人已拼，同类畅销第3名 3000+人已拼，同类畅销第3名"
+                    YYLabel frame=(0.0,527.0,0.0,0.0) visible=false enabled=true interaction=true subviews=0 text=""
+                PDDGoodsDetailGroupScrollAsyncCell frame=(0.0,557.0,375.0,96.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIView frame=(0.0,557.0,375.0,96.0) visible=true enabled=true interaction=true subviews=5 text=""
+                    UIView frame=(0.0,557.0,375.0,92.0) visible=true enabled=true interaction=true subviews=3 text=""
+                    UIView frame=(0.0,653.0,375.0,92.0) visible=true enabled=true interaction=true subviews=3 text=""
+                PDDCommonPagingScrollView frame=(0.0,9181.0,375.0,613.0) visible=false enabled=true interaction=true subviews=2 text=""
+                  UICollectionView frame=(0.0,9181.0,375.0,613.0) visible=false enabled=true interaction=true subviews=2 text=""
+                    _UIScrollViewScrollIndicator frame=(365.0,9788.0,7.0,3.0) visible=false enabled=true interaction=true subviews=1 text=""
+                    _UIScrollViewScrollIndicator frame=(369.0,9784.0,3.0,7.0) visible=false enabled=true interaction=true subviews=1 text=""
+                  _UIScrollViewScrollIndicator frame=(369.0,9184.0,3.0,607.0) visible=false enabled=true interaction=true subviews=1 text=""
+                PDDGoodsDetailTopView frame=(0.0,0.0,375.0,375.0) visible=true enabled=true interaction=true subviews=3 text=""
+                  SDCycleScrollView frame=(0.0,0.0,375.0,375.0) visible=true enabled=true interaction=true subviews=2 text=""
+                    UICollectionView frame=(0.0,0.0,375.0,375.0) visible=true enabled=true interaction=true subviews=2 text=""
+                  UILabel frame=(181.5,342.0,12.0,21.0) visible=false enabled=true interaction=false subviews=0 text=""
+                  UILabel frame=(327.3,342.0,35.7,21.0) visible=true enabled=true interaction=false subviews=0 text="1/10"
+                _UIScrollViewScrollIndicator frame=(369.0,261.0,3.0,349.0) visible=false enabled=true interaction=true subviews=1 text=""
+                _UIScrollViewScrollIndicator frame=(365.0,607.0,7.0,3.0) visible=false enabled=true interaction=true subviews=1 text=""
+              PDDBackToTopButton frame=(319.0,623.0,40.0,40.0) visible=true enabled=true interaction=true subviews=2 text="顶部 component.button.null.back_to_top"
+                UIImageView frame=(328.7,626.3,20.0,20.0) visible=true enabled=false interaction=false subviews=0 text=""
+                UIButtonLabel frame=(328.7,642.7,21.0,12.0) visible=true enabled=true interaction=false subviews=0 text="顶部"
+            PDDGoodsDetailNavigationBar frame=(0.0,0.0,375.0,64.0) visible=true enabled=true interaction=true subviews=4 text=""
+              _UIBarBackground frame=(0.0,0.0,375.0,64.0) visible=true enabled=false interaction=false subviews=2 text=""
+                UIImageView frame=(0.0,0.0,375.0,64.0) visible=true enabled=false interaction=false subviews=0 text=""
+              _UINavigationBarContentView frame=(0.0,20.0,375.0,44.0) visible=true enabled=true interaction=true subviews=3 text=""
+                _UIButtonBarStackView frame=(8.0,20.0,74.0,44.0) visible=true enabled=true interaction=true subviews=2 text=""
+                  _UITAMICAdaptorView frame=(16.0,20.0,66.0,44.0) visible=true enabled=true interaction=true subviews=1 text=""
+                    UIButton frame=(16.0,20.0,66.0,44.0) visible=true enabled=true interaction=true subviews=1 text="返回"
+                _UIButtonBarStackView frame=(287.0,20.0,80.0,44.0) visible=true enabled=true interaction=true subviews=4 text=""
+                  _UITAMICAdaptorView frame=(287.0,20.0,32.0,44.0) visible=true enabled=true interaction=true subviews=1 text=""
+                    UIButton frame=(287.0,20.0,32.0,44.0) visible=true enabled=true interaction=true subviews=1 text="分享到拼小圈"
+                  _UITAMICAdaptorView frame=(327.0,20.0,32.0,44.0) visible=true enabled=true interaction=true subviews=1 text=""
+                    UIButton frame=(327.0,20.0,32.0,44.0) visible=true enabled=true interaction=true subviews=1 text="分享"
+                _UITAMICAdaptorView frame=(88.0,30.0,193.0,24.0) visible=true enabled=true interaction=true subviews=1 text=""
+            PDDGoodsDetailBottomBar frame=(0.0,613.0,375.0,54.0) visible=true enabled=true interaction=true subviews=5 text=""
+              PDDGoodsDetailButtonView frame=(0.0,613.0,45.0,54.0) visible=true enabled=true interaction=true subviews=2 text="店铺"
+                UILabel frame=(9.0,646.0,26.7,15.7) visible=true enabled=true interaction=false subviews=0 text="店铺"
+                UIButton frame=(11.0,619.0,24.0,24.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIImageView frame=(12.0,620.0,22.0,22.0) visible=true enabled=false interaction=false subviews=0 text=""
+              PDDGoodsDetailButtonView frame=(45.0,613.0,45.0,54.0) visible=true enabled=true interaction=true subviews=2 text="收藏"
+                UILabel frame=(54.0,646.0,26.7,15.7) visible=true enabled=true interaction=false subviews=0 text="收藏"
+                UIButton frame=(56.0,619.0,24.0,24.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIImageView frame=(56.0,619.0,24.0,24.0) visible=true enabled=false interaction=false subviews=0 text=""
+              PDDGoodsDetailButtonView frame=(90.0,613.0,45.0,54.0) visible=true enabled=true interaction=true subviews=2 text="客服"
+                UILabel frame=(99.0,646.0,26.7,15.7) visible=true enabled=true interaction=false subviews=0 text="客服"
+                UIButton frame=(101.0,619.0,24.0,24.0) visible=true enabled=true interaction=true subviews=1 text=""
+                  UIImageView frame=(101.0,619.0,24.0,24.0) visible=true enabled=false interaction=false subviews=0 text=""
+              PDDGoodsDetailBottomButtonView frame=(221.0,613.0,154.0,54.0) visible=true enabled=true interaction=true subviews=9 text="首件   ¥ 118免拼购买"
+                UILabel frame=(260.3,618.0,75.3,23.0) visible=true enabled=true interaction=false subviews=0 text="首件   ¥ 118"
+                UILabel frame=(263.3,639.0,69.3,21.0) visible=true enabled=true interaction=false subviews=0 text="免拼购买"
+              PDDGoodsDetailBottomButtonView frame=(135.0,613.0,86.0,54.0) visible=true enabled=true interaction=true subviews=9 text="¥ 154单独购买"
+                UILabel frame=(157.2,618.0,41.7,23.0) visible=true enabled=true interaction=false subviews=0 text="¥ 154"
+                UILabel frame=(143.3,639.0,69.3,21.0) visible=true enabled=true interaction=false subviews=0 text="单独购买"
+          AMLoadingIndicatorContainer frame=(0.0,0.0,375.0,667.0) visible=true enabled=false interaction=false subviews=1 text=""
+
+[raw_preview]
+{"network_operator":"46002","source":"index","op":"epv","list_id":"0379999611","time":"1775462075295","page_id":"10015_1775462072480_0715638348","user_id":"4330520340133","_x_query":"杯子","app_version":"8.1.0","sort":"default","pdd_id":"tFXXKmbn","action":"forward","query":"杯子","page_name":"search_result","install_token":"D11EB6ED-9B41-4C32-A5DC-4B847818BC63","internal_version":"1774782882149","search_type":"goods","local_ip":"192.168.31.23","refer_page_sn":"31592","local_port":51114,"_x_org":2,"platform":"iOS","page_sn":"10015","sub_op":"leave","network":1,"model":"iPhone10,2","search_met":"manual","uin":"WWRK65FUEPYNWIVEDGFRHUWFI4_GEXDA","rn":"27961b33f429ed2734e6a706de9d93c7","enter_time":1775462072740,"refer_search_met":"manual","refer_page_id":"31592_1775462072062_2385814659"}

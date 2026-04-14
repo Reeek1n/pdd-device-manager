@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "signature_algorithm": "p256-sha256",
+  "product_code": "pdd_ios_agent",
+  "license_id": "lic_skill_valid_110",
+  "customer_name": "codex-realtest",
+  "issued_at": "2026-04-06 15:49:36",
+  "expires_at": "2027-04-06 23:59:59",
+  "bound_binding_id": "sha256:8004ff2bf5d657d3bf34164bf313fce7e3f133b4d3b924f32dc27585197cf250",
+  "bound_device_name": "unknown",
+  "bound_product_type": "iPhone10,2",
+  "bound_os_version": "14.3",
+  "binding_source": "system",
+  "edition": "standard",
+  "features": [
+    "collect",
+    "watch",
+    "export",
+    "deploy",
+    "triage"
+  ],
+  "notes": "",
+  "signature": "MEUCIQDSQtXeM9xcAwt2/k5Ep+gzIHF4C1z7cvQEO6nyArDqQwIgJEP+ZjcAXoEr55GPbTYJDBiPEOHmDX67Dzdw7JCzMMU="
+}

@@ -1,0 +1,54 @@
+timestamp=1775462072
+task_id=pdd_20260406_155430
+keyword=杯子
+category=search_activation_trace
+state=running
+saved_count=0
+attempted_count=0
+failed_count=0
+consecutive_failure_count=0
+duplicate_skip_count=0
+unknown_entry_count=0
+no_new_scroll_rounds=0
+consecutive_unknown_or_click_failures=0
+needs_back_navigation=false
+
+[detail]
+mode=entry_view
+keyword=杯子
+entry=PDDCommonSearchBar frame=(14,23,347,38) text="杯子"
+activated_target=PDDSearchBarInputFieldNew frame=(14,23,347,38) text="杯子"
+
+[root]
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=2 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,618.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,618.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,618.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,618.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDCommonContanierView frame=(0.0,0.0,375.0,107.0) visible=true enabled=true interaction=true subviews=2 text=""
+            UIImageView frame=(0.0,0.0,375.0,106.0) visible=true enabled=false interaction=false subviews=0 text=""
+            PDDCommonSearchBar frame=(14.0,23.0,347.0,38.0) visible=true enabled=true interaction=true subviews=1 text="杯子"
+          UIView frame=(0.0,67.0,375.0,551.0) visible=true enabled=true interaction=true subviews=3 text=""
+            MenuPageMenuContainerView frame=(0.0,67.0,375.0,39.0) visible=true enabled=true interaction=true subviews=4 text=""
+            MenuPageScrollView frame=(0.0,106.0,375.0,512.0) visible=true enabled=true interaction=true subviews=1 text=""
+  AMNewTabBar frame=(0.0,618.0,375.0,49.0) visible=true enabled=true interaction=true subviews=6 text=""
+    AMNewTabBarItemView frame=(0.0,618.0,75.0,49.0) visible=true enabled=true interaction=true subviews=2 text="首页 已选中首页"
+      UIImageView frame=(15.5,625.0,44.0,24.0) visible=true enabled=false interaction=false subviews=0 text=""
+      UILabel frame=(0.0,653.5,75.0,12.0) visible=true enabled=true interaction=false subviews=0 text="首页"
+    AMNewTabBarItemView frame=(75.0,618.0,75.0,49.0) visible=true enabled=true interaction=true subviews=2 text="多多视频 多多视频3"
+      UIImageView frame=(90.0,625.0,45.0,24.0) visible=true enabled=false interaction=false subviews=1 text=""
+        UILabel frame=(114.5,620.0,16.0,16.0) visible=true enabled=true interaction=false subviews=0 text="3"
+      UILabel frame=(75.0,653.5,75.0,12.0) visible=true enabled=true interaction=false subviews=0 text="多多视频"
+    AMNewTabBarItemView frame=(150.0,618.0,75.0,49.0) visible=true enabled=true interaction=true subviews=2 text="大促销 大促销"
+      UIImageView frame=(159.5,626.0,56.0,23.0) visible=true enabled=false interaction=false subviews=0 text=""
+      UILabel frame=(150.0,653.5,75.0,12.0) visible=true enabled=true interaction=false subviews=0 text="大促销"
+    AMNewTabBarItemView frame=(225.0,618.0,75.0,49.0) visible=true enabled=true interaction=true subviews=2 text="聊天 聊天"
+      UIImageView frame=(240.5,625.0,44.0,24.0) visible=true enabled=false interaction=false subviews=0 text=""
+      UILabel frame=(225.0,653.5,75.0,12.0) visible=true enabled=true interaction=false subviews=0 text="聊天"
+    AMNewTabBarItemView frame=(300.0,618.0,75.0,49.0) visible=true enabled=true interaction=true subviews=2 text="个人中心 个人中心"
+      UIImageView frame=(315.5,625.0,44.0,24.0) visible=true enabled=false interaction=false subviews=0 text=""
+      UILabel frame=(300.0,653.5,75.0,12.0) visible=true enabled=true interaction=false subviews=0 text="个人中心"

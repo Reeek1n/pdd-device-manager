@@ -1,0 +1,19 @@
+timestamp=1775462094
+task_id=pdd_20260406_155452
+keyword=杯子
+event=set_http_body
+task_class=
+session_class=
+delegate_class=
+original_request_url=
+request_url=https://apm.pinduoduo.com/mmr.gif
+response_url=
+status_code=0
+mime_type=
+body_length=9498
+url_looks_relevant=false
+body_looks_relevant=true
+
+[body_preview]
+{"payload":"{\"ext\":\"{\\\"leakResult\\\":[{\\\"pageChain\\\":[\\\"<04-06 15:54:34.545>  will open : <PDDGoodsDetailViewController: 0x10a220a00> , memory: 175 MB\\\",\\\"<04-06 15:54:32.549>  will open : <PDDSearchResultViewController: 0x1210af400> , memory: 163 MB\\\",\\\"<04-06 15:54:32.066>  will open : <PDDSearchDetailViewController: 0x115cc27b0> , memory: 154 MB\\\",\\\"<04-06 15:54:28.785>  will open : <PDDHomeViewController: 0x10944d070> , memory: 61 MB\\\",\\\"<04-06 15:54:28.536>  did receive memory pressure event:0 , memory: 40 MB\\\"],\\\"leakSize\\\":0,\\\"referenceChain\\\":[\\\"PDDGoodsDetailViewController\\\",\\\"This is not a memory leak but an OOM, page transition records and memory are listed in the next tab\\\"],\\\"className\\\":\\\"pdd_goods_detail\\\",\\\"leakCount\\\":0}],\\\"extraInfo\\\":{\\\"eventType\\\":\\\"LEAK\\\",\\\"deviceId\\\":\\\"tFXXKmbn\\\",\\\"osCode\\\":\\\"18C66\\\",\\\"brand\\\":\\\"iphone\\\",\\\"channel\\\":\\\"appStore\\\",\\\"ua\\\":\\\"Mozilla\\\\\\\/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit\\\\\\\/605.1.15 (KHTML, like Gecko) Mobile\\\\\\\/15E148 ===  iOS\\\\\\\/14.3 Model\\\\\\\/iPhone10,2 BundleID\\\\\\\/com.xunmeng.pinduoduo AppVersion\\\\\\\/8.1.0 AppBuild\\\\\\\/202603291925 pversion\\\\\\\/0\\\",\\\"appVersion\\\":\\\"8.1.0\\\",\\\"category\\\":3,\\\"reportTime\\\":1775462094,\\\"cpuArch\\\":\\\"arm64\\\",\\\"type\\\":\\\"flotsam\\\",\\\"liveTime\\\":21.543556928634644,\\\"freeMemory\\\":1994389968,\\\"id\\\":\\\"f52a6e0ea67a4dbc82538e706b68f41f\\\",\\\"bundleID\\\":\\\"com.xunmeng.pinduoduo\\\",\\\"platform\\\":\\\"iOS\\\",\\\"buildNo\\\":\\\"202603291925\\\",\\\"uid\\\":\\\"4330520340133\\\",\\\"manufacture\\\":\\\"Apple\\\",\\\"internalNo\\\":\\\"1774782882149\\\",\\\"osVer\\\":\\\"14.3\\\",\\\"appId\\\":\\\"5\\\",\\\"model\\\":\\\"iPhone10,2\\\",\\\"memorySize\\\":3118104576,\\\"isForeground\\\":true,\\\"freeStorageSize\\\":45727308933,\\\"rootFlag\\\":true,\\\"eventTime\\\":1775462089.6702409,\\\"processName\\\":\\\"pinduoduo\\\"},\\\"otherData\\\":{\\\"physicalFootprint\\\":\\\"205538864\\\",\\\"launchedByPullLive\\\":\\\"0\\\",\\\"configVersion\\\":\\\"00171230\\\",\\\"lastPageUrl\\\":\\\"pdd_goods_detail\\\",\\\"safe_mode\\\":\\\"0\\\",\\\"intervalSinceLastActive\\\":\\\"20\\\",\\\"lastNativePagePath\\\":\\\"pdd_goods_detail\\\",\\\"lastPageType\\\":\\\"native\\\",\\\"loopBlockTime\\\":\\\"-1\\\",\\\"memoryLimitPerProcess\\\":\\\"2199928832\\\",\\\"initalAppState\\\":\\\"1\\\",\\\"installToken\\\":\\\"D11EB6ED-9B41-4C32-A5DC-4B847818BC63\\\",\\\"lastClassName\\\":\\\"PDDGoodsDetailViewController\\\",\\\"legoExceptionPageUrlWithParams\\\":\\\"goods.quality_selling_point_section_goods-detail.features_section.features_cell.html\\\",\\\"thermalState\\\":\\\"0\\\",\\\"memory_logger\\\":\\\"1\\\",\\\"legoPageInfo\\\":\\\"{\\\\\\\"pageSn\\\\\\\":\\\\\\\"10014\\\\\\\",\\\\\\\"businessId\\\\\\\":\\\\\\\"goods.quality_selling_point_section_goods-detail.features_section.features_
+...[truncated]

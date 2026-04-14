@@ -1,0 +1,44 @@
+timestamp=1775462072
+task_id=pdd_20260406_155430
+keyword=杯子
+category=search_submit_trace
+state=running
+saved_count=0
+attempted_count=0
+failed_count=0
+consecutive_failure_count=0
+duplicate_skip_count=0
+unknown_entry_count=0
+no_new_scroll_rounds=0
+consecutive_unknown_or_click_failures=0
+needs_back_navigation=false
+
+[detail]
+keyword=杯子
+search_view=PDDSearchBarTextField frame=(106,23,170,38) text="杯子"
+editable_candidate=PDDSearchBarTextField frame=(106,23,170,38) text="杯子"
+editable_view=PDDSearchBarTextField frame=(106,23,170,38) text="杯子"
+write_target=PDDSearchBarTextField frame=(106,23,170,38) text="杯子"
+write_mode=setText:
+keyword_applied=true
+submit_mode=delegate.textFieldShouldReturn:
+did_write=true
+did_submit=true
+
+[root]
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=4 text=""
+          UIScrollView frame=(0.0,64.0,375.0,603.0) visible=true enabled=true interaction=true subviews=1 text=""
+            PDDSearchDetailCollectionView frame=(0.0,64.0,375.0,603.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDSearchBarContainerView frame=(0.0,0.0,375.0,64.0) visible=true enabled=true interaction=true subviews=2 text="杯子"
+            UIImageView frame=(0.0,0.0,375.0,64.0) visible=true enabled=false interaction=false subviews=0 text=""
+            PDDCommonSearchBar frame=(0.0,23.0,375.0,38.0) visible=true enabled=true interaction=true subviews=3 text="杯子 杯子"
+          PDDSearchAudioContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+            PDDCommonAudioRecordContainerView frame=(0.0,64.0,375.0,603.0) visible=true enabled=true interaction=true subviews=1 text=""

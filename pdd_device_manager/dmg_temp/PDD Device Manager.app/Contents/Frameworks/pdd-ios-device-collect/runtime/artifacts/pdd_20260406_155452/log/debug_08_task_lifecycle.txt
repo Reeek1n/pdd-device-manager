@@ -1,0 +1,18 @@
+timestamp=1775462095
+task_id=pdd_20260406_155452
+keyword=杯子
+event=set_http_body
+task_class=
+session_class=
+delegate_class=
+original_request_url=
+request_url=https://apm-a.pinduoduo.com/api/pmm/defined
+response_url=
+status_code=0
+mime_type=
+body_length=8526
+url_looks_relevant=false
+body_looks_relevant=false
+
+[body_preview]
+<non-utf8 length=8526>

@@ -1,0 +1,51 @@
+name: Build Windows Release
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+        pip install -r pdd_device_manager/requirements.txt
+        
+    - name: Build application
+      run: |
+        cd pdd_device_manager
+        pyinstaller pdd_device_manager_windows.spec --clean
+        
+    - name: Create ZIP package
+      run: |
+        cd pdd_device_manager/dist
+        Compress-Archive -Path "PDD Device Manager" -DestinationPath "PDD-Device-Manager-Windows.zip"
+        
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: PDD-Device-Manager-Windows
+        path: pdd_device_manager/dist/PDD-Device-Manager-Windows.zip
+        
+    - name: Create Release
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: pdd_device_manager/dist/PDD-Device-Manager-Windows.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

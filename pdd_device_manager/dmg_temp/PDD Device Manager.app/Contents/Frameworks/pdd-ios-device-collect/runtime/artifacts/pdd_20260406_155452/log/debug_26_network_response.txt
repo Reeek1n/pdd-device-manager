@@ -1,0 +1,13 @@
+timestamp=1775462097
+task_id=pdd_20260406_155452
+keyword=杯子
+request_url=http://101.35.212.35/v2/d?id=25196&ttl=1&dn=03FE2C6EF6DF7C5B00096FB8A3156A3B51CE7A1F6DBD72E1&type=addrs
+response_url=http://101.35.212.35/v2/d?id=25196&ttl=1&dn=03FE2C6EF6DF7C5B00096FB8A3156A3B51CE7A1F6DBD72E1&type=addrs
+status_code=200
+mime_type=text/plain
+body_length=160
+url_looks_relevant=false
+body_looks_relevant=false
+
+[raw_preview]
+d75fc2bb7228a7d63decab9814d88e814b6fd2cc860039b70599a15009599fb0d196d4a782643d74f9bb6e9c73d48626ec15fdd12e6cdee577fc6244102243cbe658ea9a9345d60cf25b974ead55c49f

@@ -1,0 +1,15 @@
+timestamp=1775462097
+task_id=pdd_20260406_155452
+keyword=杯子
+event=task_resume
+task_class=__NSCFLocalDataTask
+session_class=__NSURLSessionLocal
+delegate_class=
+original_request_url=http://101.35.212.35/v2/d?id=25196&ttl=1&dn=03FE2C6EF6DF7C5B00096FB8A3156A3B51CE7A1F6DBD72E1&type=addrs
+request_url=http://101.35.212.35/v2/d?id=25196&ttl=1&dn=03FE2C6EF6DF7C5B00096FB8A3156A3B51CE7A1F6DBD72E1&type=addrs
+response_url=
+status_code=0
+mime_type=
+body_length=0
+url_looks_relevant=false
+body_looks_relevant=false

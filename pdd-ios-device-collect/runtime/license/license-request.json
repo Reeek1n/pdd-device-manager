@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "request_type": "license_request",
+  "product_code": "pdd_ios_agent",
+  "generated_at": "2026-04-06 15:49:02",
+  "binding_id": "sha256:8004ff2bf5d657d3bf34164bf313fce7e3f133b4d3b924f32dc27585197cf250",
+  "binding_source": "system",
+  "device_name": "unknown",
+  "product_type": "iPhone10,2",
+  "os_version": "14.3",
+  "remote_root": "/var/mobile/Containers/Data/Application/1206A2C0-4B5F-45DD-85DE-5087E908A375/Documents/PDDGoodsData"
+}

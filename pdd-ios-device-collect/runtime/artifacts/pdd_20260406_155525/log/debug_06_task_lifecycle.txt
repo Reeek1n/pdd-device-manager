@@ -1,0 +1,18 @@
+timestamp=1775462127
+task_id=pdd_20260406_155525
+keyword=杯子
+event=set_http_body
+task_class=
+session_class=
+delegate_class=
+original_request_url=
+request_url=https://log.pinduoduo.com/api/galerie/cos_large_file/upload_init?sdk_version=ios-8.1.0&tag_name=pmm-log
+response_url=
+status_code=0
+mime_type=
+body_length=687
+url_looks_relevant=false
+body_looks_relevant=false
+
+[body_preview]
+{"upload_sign":"MDpbCmzeyVFkvdHHQ3YsSYVCoNMDXb1kpgBBy0XnLxQfWiV20stfEWDlTq3ElJ1GlnkYg3S3SBdC8DV9Yra8UFSYoVEyHdF6_dFlOkZvFkvJCnZOmg2wvc54M5u_Qdnx1q7rb11tLC0P1FXjSlxd6JywroAJA4JM6o7RsXEqz_Qu2SF04ChFQ5ZOM_Aw-NnBNCjtblkPap83Lh68xkil2eDga1QyjpMzvfcit2x6JToKMXxLc43uw6Lvs8qlirKjbfb7tCA_KXL_9DWAl03PSB2oqz26Z8k34oRSLiYjbi61nrT2A5JkTvc5WeRynVOO-QTF-DkG_hLR6svpH-5ZafBA7z7xnbVgVed_ND9lkRX2s_zuKQ5VG_7USeGtvZzHMgLNy3yPVqOotNPibw9aa1yIWzO9q3iRWG3PWcsdb1WQS4nkrFVsC3WgRaPTvBbyIb5qjJ7wdimEc5Ug_9v-uLHK","url_sign":0,"content_disposition":"attachment; filename=PDD_log_4330520340133_20260406_main.xlog","file_name":"PDD_log_4330520340133_20260406_main.xlog","content_type":"application\/octet-stream"}

@@ -1,0 +1,18 @@
+timestamp=1775462127
+task_id=pdd_20260406_155525
+keyword=杯子
+event=set_http_body
+task_class=
+session_class=
+delegate_class=
+original_request_url=
+request_url=https://th.pinduoduo.com/t.gif
+response_url=
+status_code=0
+mime_type=
+body_length=625
+url_looks_relevant=false
+body_looks_relevant=false
+
+[body_preview]
+<non-utf8 length=625>

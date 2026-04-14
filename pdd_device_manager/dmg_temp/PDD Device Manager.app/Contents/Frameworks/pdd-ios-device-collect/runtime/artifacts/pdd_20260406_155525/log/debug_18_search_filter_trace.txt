@@ -1,0 +1,60 @@
+timestamp=1775462132
+task_id=pdd_20260406_155525
+keyword=杯子
+category=search_filter_trace
+state=running
+saved_count=0
+attempted_count=0
+failed_count=0
+consecutive_failure_count=0
+duplicate_skip_count=0
+unknown_entry_count=0
+no_new_scroll_rounds=0
+consecutive_unknown_or_click_failures=0
+needs_back_navigation=false
+
+[detail]
+step=fill_price_filter_inputs
+price_min=10
+price_max=99
+filled=true
+apply_attempt=1
+min_input=UITextField frame=(191,196,81,38) text="10 最低价"
+max_input=UITextField frame=(280,196,81,38) text="99 最高价"
+min_write_mode=deleteBackward+insertText:+editingEvents
+max_write_mode=deleteBackward+insertText:+editingEvents
+did_write_min=true
+did_write_max=true
+keyboard_before=true
+requested_end_editing=true
+resigned_first_responder=false
+keyboard_after=false
+
+[root]
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=8 text=""
+          UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=2 text=""
+            UIView frame=(0.0,0.0,375.0,80.0) visible=true enabled=true interaction=true subviews=0 text=""
+            PDDSearchPageView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=5 text=""
+          UIImageView frame=(0.0,0.0,375.0,20.0) visible=true enabled=false interaction=false subviews=0 text=""
+          PDDSearchDominoLegoView frame=(0.0,64.0,375.0,603.0) visible=false enabled=true interaction=true subviews=1 text=""
+            LELegoView frame=(0.0,64.0,375.0,603.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDSearchPlaceHolderView frame=(0.0,64.0,375.0,603.0) visible=false enabled=true interaction=true subviews=2 text=""
+            UIImageView frame=(163.5,128.0,48.0,48.0) visible=true enabled=false interaction=false subviews=0 text=""
+          PDDBackToTopButton frame=(319.0,667.0,40.0,40.0) visible=false enabled=true interaction=true subviews=2 text="顶部 component.button.null.back_to_top"
+            UIButtonLabel frame=(328.7,686.7,21.0,12.0) visible=false enabled=true interaction=false subviews=0 text="顶部"
+          AMLoadingIndicatorContainer frame=(0.0,0.0,375.0,667.0) visible=true enabled=false interaction=false subviews=1 text=""
+          PDDSRCommonFilterBgView frame=(0.0,104.0,375.0,563.0) visible=true enabled=true interaction=true subviews=0 text=""
+          PDDSRInnerFilterView frame=(0.0,104.0,375.0,382.5) visible=true enabled=true interaction=true subviews=5 text=""
+            UITableView frame=(0.0,104.0,88.0,333.5) visible=true enabled=true interaction=true subviews=8 text=""
+            UITableView frame=(88.0,104.0,287.0,333.5) visible=true enabled=true interaction=true subviews=5 text=""
+            UIView frame=(0.0,429.5,375.0,8.0) visible=true enabled=true interaction=true subviews=0 text=""
+            UIButton frame=(187.5,437.5,187.5,49.0) visible=true enabled=true interaction=true subviews=2 text="确定 (1万+件商品)"
+            UIButton frame=(0.0,437.5,187.5,49.0) visible=true enabled=true interaction=true subviews=2 text="重置 虫置"

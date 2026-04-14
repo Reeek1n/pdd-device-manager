@@ -1,0 +1,56 @@
+timestamp=1775462129
+task_id=pdd_20260406_155525
+keyword=杯子
+category=search_filter_trace
+state=running
+saved_count=0
+attempted_count=0
+failed_count=0
+consecutive_failure_count=0
+duplicate_skip_count=0
+unknown_entry_count=0
+no_new_scroll_rounds=0
+consecutive_unknown_or_click_failures=0
+needs_back_navigation=false
+
+[detail]
+step=sales_sort_confirm
+requested_sort=sales
+confirmed=true
+signature_changed=true
+visible_count_changed=false
+observed_reload=false
+looks_selected=false
+wait_seconds=0.90
+baseline_signature=id:641874704749|txt:更多同款商品批发定做保温杯开业纪念寿宴礼品杯子定|txt:316不锈钢保温杯咖啡杯定制logo伴手纪念礼品|id:915117183345
+current_signature=id:641874704749|id:918357201500|txt:316不锈钢保温杯咖啡杯定制logo伴手纪念礼品|id:914942382006
+baseline_visible_count=4
+current_visible_count=4
+candidate_1=UILabel frame=(94,76,29,17) text="销量"
+candidate_2=PDDSRSortFilterMixBtnCell frame=(77,64,61,40) text=""
+  isSelected=false
+  key.selected=false
+  key._selected=false
+
+
+[root]
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=6 text=""
+          UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=2 text=""
+            UIView frame=(0.0,0.0,375.0,80.0) visible=true enabled=true interaction=true subviews=0 text=""
+            PDDSearchPageView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=5 text=""
+          UIImageView frame=(0.0,0.0,375.0,20.0) visible=true enabled=false interaction=false subviews=0 text=""
+          PDDSearchDominoLegoView frame=(0.0,64.0,375.0,603.0) visible=false enabled=true interaction=true subviews=1 text=""
+            LELegoView frame=(0.0,64.0,375.0,603.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDSearchPlaceHolderView frame=(0.0,64.0,375.0,603.0) visible=false enabled=true interaction=true subviews=2 text=""
+            UIImageView frame=(163.5,128.0,48.0,48.0) visible=true enabled=false interaction=false subviews=0 text=""
+          PDDBackToTopButton frame=(319.0,667.0,40.0,40.0) visible=false enabled=true interaction=true subviews=2 text="顶部 component.button.null.back_to_top"
+            UIButtonLabel frame=(328.7,686.7,21.0,12.0) visible=false enabled=true interaction=false subviews=0 text="顶部"
+          AMLoadingIndicatorContainer frame=(0.0,0.0,375.0,667.0) visible=true enabled=false interaction=false subviews=1 text=""

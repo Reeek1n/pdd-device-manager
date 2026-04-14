@@ -1,0 +1,37 @@
+timestamp=1775462099
+task_id=pdd_20260406_155452
+keyword=杯子
+category=detail_runtime_fallback
+state=running
+saved_count=0
+attempted_count=0
+failed_count=0
+consecutive_failure_count=0
+duplicate_skip_count=0
+unknown_entry_count=0
+no_new_scroll_rounds=0
+consecutive_unknown_or_click_failures=0
+needs_back_navigation=true
+
+[detail]
+goods_id=844646344718
+source=RuntimeGraph
+url=childVC.PDDGoodsDetailViewController.viewModel.preloadDetailModel.responseData.decodedJSON
+visible_text=顶部 component.button.null.back_to_top | 店铺 | 收藏 | 客服 | 即将卖完   ¥ 87.6免拼购买 | ¥ 券后   87.6 已优惠9元 已拼3979件 | 已享9元优惠 跨店每满100减15 | 顶部 | 即将卖完   ¥ 87.6 | 免拼购买 | 1/10 | 券后 | ¥ | 87.6 | 已拼3979件 已拼3979件 | 全自动2025搅拌新款电动摇摇运动健身水杯便携奶昔蛋白粉充...
+root_is_detail=true
+
+[root]
+root_vc=AMNewTabBarController
+root_view=UIView
+
+[visible_view_hierarchy]
+UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+  UILayoutContainerView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+    UINavigationTransitionView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+      UIViewControllerWrapperView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=1 text=""
+        UIView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=2 text=""
+          PDDGoodsDetailContentView frame=(0.0,0.0,375.0,667.0) visible=true enabled=true interaction=true subviews=4 text=""
+            PDDMixNestScrollMutiTabContainerView frame=(0.0,0.0,375.0,613.0) visible=true enabled=true interaction=true subviews=2 text=""
+            PDDGoodsDetailNavigationBar frame=(0.0,0.0,375.0,64.0) visible=true enabled=true interaction=true subviews=4 text=""
+            PDDGoodsDetailBottomBar frame=(0.0,613.0,375.0,54.0) visible=true enabled=true interaction=true subviews=4 text=""
+          AMLoadingIndicatorContainer frame=(0.0,0.0,375.0,667.0) visible=true enabled=false interaction=false subviews=1 text=""

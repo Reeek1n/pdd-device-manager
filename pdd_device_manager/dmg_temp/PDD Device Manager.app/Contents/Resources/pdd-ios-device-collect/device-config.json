@@ -1,0 +1,22 @@
+{
+  "ssh_host": "192.168.0.34",
+  "ssh_user": "mobile",
+  "ssh_port": 22,
+  "ssh_key": "",
+  "ssh_password": "001314",
+  "remote_root_override": "",
+  "local_artifacts_dir": "./runtime/artifacts",
+  "local_state_dir": "./runtime/device_state",
+  "ssh_connect_timeout_sec": 10,
+  "ssh_command_timeout_sec": 30,
+  "ssh_control_persist_sec": 600,
+  "ssh_server_alive_interval_sec": 15,
+  "ssh_server_alive_count_max": 3,
+  "remote_root_cache_ttl_sec": 3600,
+  "default_wait_timeout_sec": 1800,
+  "default_poll_interval_sec": 5,
+  "license_product_code": "pdd_ios_agent",
+  "license_public_key": "",
+  "license_public_key_path": "./license_public_key.pem",
+  "license_grace_clock_skew_sec": 300
+}
