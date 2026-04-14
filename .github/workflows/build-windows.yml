@@ -25,12 +25,13 @@ jobs:
         pip install PyQt6 paramiko bcrypt cryptography pynacl
       shell: cmd
         
-    - name: Build application
+    - name: Clean and Build application
       run: |
         cd pdd_device_manager
-        pyinstaller pdd_device_manager_windows.spec --clean
+        rmdir /s /q build 2>nul
+        rmdir /s /q dist 2>nul
+        pyinstaller pdd_device_manager_windows.spec -y --clean
       shell: cmd
-      continue-on-error: true
         
     - name: Check build output
       run: |
